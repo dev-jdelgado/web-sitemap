@@ -7,6 +7,10 @@ body {
     background-color: #f7f7f7;
 }
 
+.navbar-toggler {
+  border: transparent;
+}
+
 .form-popup {
     display: none;
     width: 100%;
@@ -17,9 +21,9 @@ body {
     z-index: 9999;
     background-color: rgba(0, 0, 0, .5);
     font-size: 20px;
-  }
+}
   
-  .form-popup .form-wrapper {
+.form-popup .form-wrapper {
     top: 5em;
     max-width: 600px;
     border-radius: 5px;
@@ -32,66 +36,60 @@ body {
     left: 0;
     right: 0;
     box-shadow: 0 0 40px 0 #000000;
-  }
+}
   
-  .form-wrapper {
+.form-wrapper {
     overflow: auto;
     height: 75%;
     animation: open .3s ease forwards;
-  }
+}
+
   
-  
-  .form-wrapper::-webkit-scrollbar-track
-  {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      border-radius: 10px;
-      background-color: #F5F5F5;
-  }
-  
-  .form-wrapper::-webkit-scrollbar
-  {
-      width: 10px;
+.form-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
-      background-color: #F5F5F5;
-  }
+    background-color: #F5F5F5;
+}
   
-  .form-wrapper::-webkit-scrollbar-thumb
-  {
-      border-radius: 5px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #555;
-  }
-  
-  
-  .courses::-webkit-scrollbar-track
-  {
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-      border-radius: 10px;
-      background-color: #F5F5F5;
-  }
-  
-  .courses::-webkit-scrollbar
-  {
+.form-wrapper::-webkit-scrollbar {
     width: 10px;
     border-radius: 10px;
     background-color: #F5F5F5;
-  }
+}
   
-  .courses::-webkit-scrollbar-thumb
-  {
-      border-radius: 5px;
-      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-      background-color: #555;
-  }
+.form-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
   
   
-  @keyframes open {
+.courses::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+  
+.courses::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+  
+.courses::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+  
+  
+@keyframes open {
     0%{ transform: scale3d(.3, .3, .3); opacity: 0;}
     100%{ transform: scale3d(1, 1, 1); opacity: 1;}
-  }
+}
   
   
-  .close-form {
+.close-form {
     position: absolute;
     top: 0;
     right: 0;
@@ -100,25 +98,25 @@ body {
     font-size: 35px;
     text-transform: uppercase;
     margin: 15px 35px;
-  }
+}
   
-  .close-form:hover {
+.close-form:hover {
     color: rgb(222, 0, 0);
     font-size: 40px;
     margin: 11px 33px;
-  }
+}
   
-  .form-title {
+.form-title {
     margin-bottom: 20px;
-  }
+}
   
-  .logo{
+.logo{
     height: 100px;
-  }
+}
   
-  .row label {
+.row label {
     margin: 10px;
-  }
+}
   
 .popup-form label {
     margin-top: 10px;
@@ -130,9 +128,7 @@ body {
     max-width: 25em;
   }
 
-.carousel-item > img { 
-    height:350px; 
-}
+
 
 .swiper-wrapper {
     position: relative;
@@ -152,6 +148,46 @@ body {
     transform: translateY(-10px);
 }
 
+.about-info {
+    font-size: 20px;
+}
+
+.icon-card {
+    width: 134.714px; 
+    margin-right: 8px;
+}
+
 .card-body img {
     height: 50px;
+}
+
+@media screen and (max-width:768px){
+  .form-popup .form-wrapper {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width:576px){
+  .form-popup .form-wrapper {
+    padding: 25px;
+    width: 85%;
+  }
+
+  .form-info label {
+    font-size: 15px;
+  }
+
+  .about-info {
+    font-size: 15px;
+    padding: 0 20px;
+  }
+
+  .icon-card {
+    width: 100px; 
+    margin-right: 1px;
+  }
+
+  .card-body img {
+    height: 35px;
+}
 }
